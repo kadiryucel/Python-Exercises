@@ -1,0 +1,17 @@
+# isim al 
+# yaş al
+# eğitim durumu al 
+# ehliiyet için en az 18 yaş ve eğitim durumu lise ya da üniversite
+
+isim = input("İsminiz: ")
+soyisim = input("Soyadınız: ")
+yas = int(input("Yaşınız: "))
+egitim = input("Eğitim Durumunuz: ")
+
+if yas >= 18 :
+    if (egitim == "lise") or (egitim == "üniversite"):
+        print(f"{isim} Ehliyet Alabilirsin...")
+    else:
+        print(f"{isim} Ehliyet Alamazsın...")
+else:
+    print("{} Ehliyet Alamazsınız...".format(isim))
